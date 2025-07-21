@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36203.30
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISpan.eMiniHR.WinApp", "ISpan.eMiniHR.WinAPP\ISpan.eMiniHR.WinApp.csproj", "{1FF7EB5A-BF8C-4FAE-A2EB-367D74848767}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISpan.eMiniHR.DataAccess", "ISpan.eMiniHR.DataAccess\ISpan.eMiniHR.DataAccess.csproj", "{9541F617-558D-45F6-87A6-472355ECA5BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1FF7EB5A-BF8C-4FAE-A2EB-367D74848767}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FF7EB5A-BF8C-4FAE-A2EB-367D74848767}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FF7EB5A-BF8C-4FAE-A2EB-367D74848767}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FF7EB5A-BF8C-4FAE-A2EB-367D74848767}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9541F617-558D-45F6-87A6-472355ECA5BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9541F617-558D-45F6-87A6-472355ECA5BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9541F617-558D-45F6-87A6-472355ECA5BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9541F617-558D-45F6-87A6-472355ECA5BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DDD46E31-1513-4BAE-B821-2DDC89D0D947}
+	EndGlobalSection
+EndGlobal

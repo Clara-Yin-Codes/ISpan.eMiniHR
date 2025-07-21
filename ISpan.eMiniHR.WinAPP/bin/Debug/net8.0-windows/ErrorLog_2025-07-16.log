@@ -1,0 +1,68 @@
+2025-07-16 10:44:19 -【Error parsing column 2 (IdNumber=A00000001 - String)】
+   at Dapper.SqlMapper.ThrowDataException(Exception ex, Int32 index, IDataReader reader, Object value) in /_/Dapper/SqlMapper.cs:line 3966
+   at Deserialize7183b847-109d-4aab-87cd-4a72cf24fd4c(DbDataReader)
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at ISpan.eMiniHR.DataAccess.DapperRepositories.EmployeeQueryRepository.GetEmployees()
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.GetEmployees()
+
+2025-07-16 14:00:30 -【參數錯誤，請確認傳入的值是否有效。】
+   at System.Windows.Forms.Binding.BindToObject.CheckBinding()
+   at System.Windows.Forms.Binding.set_BindingManagerBase(BindingManagerBase value)
+   at System.Windows.Forms.ListManagerBindingsCollection.AddCore(Binding dataBinding)
+   at System.Windows.Forms.BindingsCollection.Add(Binding binding)
+   at System.Windows.Forms.BindingContext.UpdateBinding(BindingContext newBindingContext, Binding binding)
+   at System.Windows.Forms.Binding.SetBindableComponent(IBindableComponent value)
+   at System.Windows.Forms.ControlBindingsCollection.AddCore(Binding dataBinding)
+   at System.Windows.Forms.BindingsCollection.Add(Binding binding)
+   at System.Windows.Forms.ControlBindingsCollection.Add(String propertyName, Object dataSource, String dataMember, Boolean formattingEnabled, DataSourceUpdateMode updateMode, Object nullValue, String formatString, IFormatProvider formatInfo)
+   at System.Windows.Forms.ControlBindingsCollection.Add(String propertyName, Object dataSource, String dataMember)
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.AutoBindTextBoxes(Control parent, BindingSource bindingSource) in D:\ISpan.eMiniHR-20250715T005759Z-1-001\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 95
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.AutoBindTextBoxes(Control parent, BindingSource bindingSource) in D:\ISpan.eMiniHR-20250715T005759Z-1-001\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 107
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.LoadEmployeeData() in D:\ISpan.eMiniHR-20250715T005759Z-1-001\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 83
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.EmployeeInfo_Load(Object sender, EventArgs e) in D:\ISpan.eMiniHR-20250715T005759Z-1-001\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 23
+   at System.Windows.Forms.Control.CreateControl(Boolean ignoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.ControlCollection.Add(Control value)
+   at ISpan.eMiniHR.WinApp.Forms.Base.HRForm.ShowSubPage() in D:\ISpan.eMiniHR-20250715T005759Z-1-001\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\Base\HRForm.cs:line 62
+   at ISpan.eMiniHR.WinApp.Forms.Base.HRForm.HRForm_Load(Object sender, EventArgs e) in D:\ISpan.eMiniHR-20250715T005759Z-1-001\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\Base\HRForm.cs:line 29
+   at System.Windows.Forms.Control.CreateControl(Boolean ignoreVisible)
+   at System.Windows.Forms.Control.CreateControl(Boolean ignoreVisible)
+   at System.Windows.Forms.Control.CreateControl(Boolean ignoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.ControlCollection.Add(Control value)
+   at System.Windows.Forms.TabControl.ControlCollection.Add(Control value)
+   at ISpan.eMiniHR.WinApp.Services.TabStyleHelper.ShowTabPageByCode(String progId, UserControl page, TabControl tabControlMain) in D:\ISpan.eMiniHR-20250715T005759Z-1-001\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Services\TabStyleHelper.cs:line 186
+   at ISpan.eMiniHR.WinApp.Services.TabStyleHelper.ShowPageByCode(String progSysId, TabControl tabControlMain) in D:\ISpan.eMiniHR-20250715T005759Z-1-001\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Services\TabStyleHelper.cs:line 103
+
+2025-07-16 14:00:46 -【參數錯誤，請確認傳入的值是否有效。】
+   at System.Windows.Forms.Binding.BindToObject.CheckBinding()
+   at System.Windows.Forms.Binding.set_BindingManagerBase(BindingManagerBase value)
+   at System.Windows.Forms.ListManagerBindingsCollection.AddCore(Binding dataBinding)
+   at System.Windows.Forms.BindingsCollection.Add(Binding binding)
+   at System.Windows.Forms.BindingContext.UpdateBinding(BindingContext newBindingContext, Binding binding)
+   at System.Windows.Forms.Binding.SetBindableComponent(IBindableComponent value)
+   at System.Windows.Forms.ControlBindingsCollection.AddCore(Binding dataBinding)
+   at System.Windows.Forms.BindingsCollection.Add(Binding binding)
+   at System.Windows.Forms.ControlBindingsCollection.Add(String propertyName, Object dataSource, String dataMember, Boolean formattingEnabled, DataSourceUpdateMode updateMode, Object nullValue, String formatString, IFormatProvider formatInfo)
+   at System.Windows.Forms.ControlBindingsCollection.Add(String propertyName, Object dataSource, String dataMember)
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.AutoBindTextBoxes(Control parent, BindingSource bindingSource) in D:\ISpan.eMiniHR-20250715T005759Z-1-001\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 95
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.AutoBindTextBoxes(Control parent, BindingSource bindingSource) in D:\ISpan.eMiniHR-20250715T005759Z-1-001\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 107
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.LoadEmployeeData() in D:\ISpan.eMiniHR-20250715T005759Z-1-001\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 83
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.EmployeeInfo_Load(Object sender, EventArgs e) in D:\ISpan.eMiniHR-20250715T005759Z-1-001\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 23
+   at System.Windows.Forms.Control.CreateControl(Boolean ignoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.ControlCollection.Add(Control value)
+   at ISpan.eMiniHR.WinApp.Forms.Base.HRForm.ShowSubPage() in D:\ISpan.eMiniHR-20250715T005759Z-1-001\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\Base\HRForm.cs:line 62
+   at ISpan.eMiniHR.WinApp.Forms.Base.HRForm.HRForm_Load(Object sender, EventArgs e) in D:\ISpan.eMiniHR-20250715T005759Z-1-001\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\Base\HRForm.cs:line 29
+   at System.Windows.Forms.Control.CreateControl(Boolean ignoreVisible)
+   at System.Windows.Forms.Control.CreateControl(Boolean ignoreVisible)
+   at System.Windows.Forms.Control.CreateControl(Boolean ignoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.ControlCollection.Add(Control value)
+   at System.Windows.Forms.TabControl.ControlCollection.Add(Control value)
+   at ISpan.eMiniHR.WinApp.Services.TabStyleHelper.ShowTabPageByCode(String progId, UserControl page, TabControl tabControlMain) in D:\ISpan.eMiniHR-20250715T005759Z-1-001\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Services\TabStyleHelper.cs:line 186
+   at ISpan.eMiniHR.WinApp.Services.TabStyleHelper.ShowPageByCode(String progSysId, TabControl tabControlMain) in D:\ISpan.eMiniHR-20250715T005759Z-1-001\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Services\TabStyleHelper.cs:line 103
+

@@ -1,0 +1,1816 @@
+2025-07-20 00:06:40 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 275
+
+2025-07-20 00:07:58 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 275
+
+2025-07-20 00:13:31 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 269
+
+2025-07-20 00:33:54 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 279
+
+2025-07-20 00:34:21 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 279
+
+2025-07-20 00:34:28 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 279
+
+2025-07-20 00:34:31 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 279
+
+2025-07-20 00:34:35 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 279
+
+2025-07-20 00:34:45 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 279
+
+2025-07-20 00:34:48 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 279
+
+2025-07-20 00:35:18 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 279
+
+2025-07-20 00:35:32 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 279
+
+2025-07-20 00:35:59 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 279
+
+2025-07-20 00:36:02 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 279
+
+2025-07-20 00:39:20 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 279
+
+2025-07-20 01:13:40 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 283
+
+2025-07-20 01:14:54 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 283
+
+2025-07-20 01:16:07 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 283
+
+2025-07-20 01:16:30 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 277
+
+2025-07-20 01:16:50 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 277
+
+2025-07-20 01:17:46 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 277
+
+2025-07-20 01:17:49 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 277
+
+2025-07-20 01:18:24 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 277
+
+2025-07-20 01:20:09 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 283
+
+2025-07-20 01:20:13 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 283
+
+2025-07-20 01:21:25 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 283
+
+2025-07-20 01:21:28 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 283
+
+2025-07-20 01:21:36 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 283
+
+2025-07-20 01:21:42 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 283
+
+2025-07-20 01:21:48 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 283
+
+2025-07-20 01:21:57 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 283
+
+2025-07-20 01:22:02 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 283
+
+2025-07-20 01:22:40 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 283
+
+2025-07-20 01:23:02 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 283
+
+2025-07-20 01:24:38 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 285
+
+2025-07-20 01:24:42 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 285
+
+2025-07-20 01:26:32 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:26:42 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:26:47 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:26:51 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:26:56 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:27:02 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:27:51 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:28:17 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:28:37 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:28:48 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:28:57 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:30:06 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:30:16 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:30:19 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:30:23 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:30:27 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:30:29 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:30:34 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:30:40 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:30:46 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:30:50 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:30:56 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:31:05 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:33:31 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:34:37 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:34:48 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:34:53 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:34:59 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:35:12 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:35:19 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:36:35 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:37:33 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:37:37 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:37:44 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:37:49 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:39:30 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:39:35 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:39:40 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:39:56 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:40:55 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 280
+
+2025-07-20 01:41:00 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 280
+
+2025-07-20 01:41:04 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 280
+
+2025-07-20 01:42:54 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:43:21 -【Data is Null. This method or property cannot be called on Null values.】
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method12(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method10(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 66
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:46:25 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 280
+
+2025-07-20 01:46:36 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 280
+
+2025-07-20 01:46:40 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 280
+
+2025-07-20 01:46:49 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 280
+
+2025-07-20 01:46:52 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 280
+
+2025-07-20 01:46:55 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 280
+
+2025-07-20 01:46:58 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 280
+
+2025-07-20 01:47:01 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 280
+
+2025-07-20 01:47:08 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 280
+
+2025-07-20 01:47:14 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 280
+
+2025-07-20 01:47:20 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 280
+
+2025-07-20 01:47:24 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 280
+
+2025-07-20 01:47:33 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 280
+
+2025-07-20 01:49:20 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 281
+
+2025-07-20 01:51:56 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:52:00 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:52:13 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:52:16 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:52:20 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:52:23 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:52:28 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:52:33 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:52:37 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:52:42 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:52:53 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:53:00 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:53:05 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:53:12 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 01:53:20 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 54
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 10:55:36 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 95
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 292
+
+2025-07-20 10:55:41 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 95
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 292
+
+2025-07-20 11:32:16 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 31
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 11:33:34 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 31
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 11:33:37 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 31
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 11:40:03 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 31
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 11:41:59 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 31
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 11:42:18 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Add(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 31
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 286
+
+2025-07-20 11:48:44 -【An error occurred while saving the entity changes. See the inner exception for details.】
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 83
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 292
+
+2025-07-20 12:08:17 -【無法插入 NULL 值到資料行 'PasswordHash'，資料表 'HRMiniDB2.dbo.Employee'; 資料行不得有 Null。UPDATE 失敗。】
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 67
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 292
+
+2025-07-20 12:08:32 -【無法插入 NULL 值到資料行 'PasswordHash'，資料表 'HRMiniDB2.dbo.Employee'; 資料行不得有 Null。UPDATE 失敗。】
+   at ISpan.eMiniHR.DataAccess.EfRepositories.EmployeeEfRepository.Update(EmployeeDto emp) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\EfRepositories\EmployeeEfRepository.cs:line 67
+   at ISpan.eMiniHR.WinApp.Forms.EmployeeInfo.SaveData(String action) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\EmployeeInfo.cs:line 292
+
+2025-07-20 20:47:22 -【參數錯誤，請確認傳入的值是否有效。】
+   at System.Windows.Forms.Binding.BindToObject.CheckBinding()
+   at System.Windows.Forms.Binding.set_BindingManagerBase(BindingManagerBase value)
+   at System.Windows.Forms.ListManagerBindingsCollection.AddCore(Binding dataBinding)
+   at System.Windows.Forms.BindingsCollection.Add(Binding binding)
+   at System.Windows.Forms.BindingContext.UpdateBinding(BindingContext newBindingContext, Binding binding)
+   at System.Windows.Forms.Control.UpdateBindings()
+   at System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   at System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   at System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   at System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   at System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   at System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   at System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   at System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   at System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   at System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   at System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   at System.Windows.Forms.Control.set_BindingContextInternal(BindingContext value)
+   at System.Windows.Forms.ContainerControl.get_BindingContext()
+   at System.Windows.Forms.Control.get_BindingContextInternal()
+   at System.Windows.Forms.Control.get_BindingContextInternal()
+   at System.Windows.Forms.Control.get_BindingContextInternal()
+   at System.Windows.Forms.Control.get_BindingContextInternal()
+   at System.Windows.Forms.ContainerControl.get_BindingContext()
+   at System.Windows.Forms.Control.get_BindingContextInternal()
+   at System.Windows.Forms.Control.get_BindingContextInternal()
+   at System.Windows.Forms.Control.get_BindingContextInternal()
+   at System.Windows.Forms.ContainerControl.get_BindingContext()
+   at System.Windows.Forms.Control.get_BindingContextInternal()
+   at System.Windows.Forms.Control.get_BindingContextInternal()
+   at System.Windows.Forms.Control.get_BindingContextInternal()
+   at System.Windows.Forms.DataGridView.DataGridViewDataConnection.SetDataConnection(Object dataSource, String dataMember)
+   at System.Windows.Forms.DataGridView.OnBindingContextChanged(EventArgs e)
+   at System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   at System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   at System.Windows.Forms.Control.CreateControl(Boolean ignoreVisible)
+   at System.Windows.Forms.Control.CreateControl(Boolean ignoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.ControlCollection.Add(Control value)
+   at ISpan.eMiniHR.WinApp.Forms.Base.HRForm.ShowSubPage() in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\Base\HRForm.cs:line 57
+   at ISpan.eMiniHR.WinApp.Forms.Base.HRForm.HRForm_Load(Object sender, EventArgs e) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\Base\HRForm.cs:line 31
+   at System.Windows.Forms.Control.CreateControl(Boolean ignoreVisible)
+   at System.Windows.Forms.Control.CreateControl(Boolean ignoreVisible)
+   at System.Windows.Forms.Control.CreateControl(Boolean ignoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.ControlCollection.Add(Control value)
+   at System.Windows.Forms.TabControl.ControlCollection.Add(Control value)
+   at ISpan.eMiniHR.WinApp.Helper.TabStyleHelper.ShowTabPageByCode(String progId, UserControl page, TabControl tabControlMain) in D:\20250429_資展國際\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Helper\TabStyleHelper.cs:line 190
+

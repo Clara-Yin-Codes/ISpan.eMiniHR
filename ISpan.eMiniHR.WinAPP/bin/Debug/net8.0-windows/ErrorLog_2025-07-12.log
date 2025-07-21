@@ -1,0 +1,186 @@
+【2025-07-12 01:22:32】【測試錯誤】測試錯誤
+   at ISpan.eMiniHR.WinApp.Forms.LoginForm.loginBtn_Click(Object sender, EventArgs e) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\LoginForm.cs:line 190
+
+【2025-07-12 01:22:37】【測試錯誤】測試錯誤
+   at ISpan.eMiniHR.WinApp.Forms.LoginForm.loginBtn_Click(Object sender, EventArgs e) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\LoginForm.cs:line 190
+
+【2025-07-12 01:24:50】【登入時發生錯誤】測試錯誤
+   at ISpan.eMiniHR.WinApp.Forms.LoginForm.loginBtn_Click(Object sender, EventArgs e) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\LoginForm.cs:line 190
+
+【2025-07-12 01:28:50】【登入時發生錯誤】測試錯誤
+   at ISpan.eMiniHR.WinApp.Forms.LoginForm.loginBtn_Click(Object sender, EventArgs e) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\LoginForm.cs:line 190
+
+【2025-07-12 01:30:36】【登入時發生錯誤】測試錯誤
+   at ISpan.eMiniHR.WinApp.Forms.LoginForm.loginBtn_Click(Object sender, EventArgs e) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\LoginForm.cs:line 190
+
+【2025-07-12 01:35:17】【我要放類別名稱+方順名稱】測試錯誤
+   at ISpan.eMiniHR.WinApp.Forms.LoginForm.loginBtn_Click(Object sender, EventArgs e) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\LoginForm.cs:line 190
+
+【2025-07-12 01:37:06】【我要放類別名稱+方順名稱】測試錯誤
+   at ISpan.eMiniHR.WinApp.Forms.LoginForm.loginBtn_Click(Object sender, EventArgs e) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\LoginForm.cs:line 190
+
+【2025-07-12 01:37:52】【我要放類別名稱+方順名稱】此功能尚未實作，請等待後續版本更新。
+   at ISpan.eMiniHR.WinApp.Forms.LoginForm.loginBtn_Click(Object sender, EventArgs e) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\LoginForm.cs:line 190
+
+【2025-07-12 01:39:46】【此功能尚未實作，請等待後續版本更新。 
+   at ISpan.eMiniHR.WinApp.Forms.LoginForm.loginBtn_Click(Object sender, EventArgs e) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\LoginForm.cs:line 190
+
+【2025-07-12 01:40:33】【此功能尚未實作，請等待後續版本更新。 
+   at ISpan.eMiniHR.WinApp.Forms.LoginForm.loginBtn_Click(Object sender, EventArgs e) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\LoginForm.cs:line 190
+
+【2025-07-12 01:41:36】- 此功能尚未實作，請等待後續版本更新。 
+   at ISpan.eMiniHR.WinApp.Forms.LoginForm.loginBtn_Click(Object sender, EventArgs e) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\LoginForm.cs:line 190
+
+【2025-07-12 01:42:45】- 此功能尚未實作，請等待後續版本更新。 
+   at ISpan.eMiniHR.WinApp.Forms.LoginForm.loginBtn_Click(Object sender, EventArgs e) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\LoginForm.cs:line 190
+
+2025-07-12 01:45:25 -【此功能尚未實作，請等待後續版本更新。】
+   at ISpan.eMiniHR.WinApp.Forms.LoginForm.loginBtn_Click(Object sender, EventArgs e) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\LoginForm.cs:line 190
+
+2025-07-12 02:20:02 -【資料庫發生錯誤，請確認連線與語法是否正確。】
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1185
+   at Dapper.SqlMapper.QueryRowImpl[T](IDbConnection cnn, Row row, CommandDefinition& command, Type effectiveType) in /_/Dapper/SqlMapper.cs:line 1306
+   at Dapper.SqlMapper.QueryFirstOrDefault[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 886
+   at ISpan.eMiniHR.DataAccess.DapperRepositories.LoginRepository.TryLogin(String account, String password, String sql, String role) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\DapperRepositories\LoginRepository.cs:line 40
+   at ISpan.eMiniHR.DataAccess.DapperRepositories.LoginRepository.GetLogin(String account, String password) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\DapperRepositories\LoginRepository.cs:line 19
+   at ISpan.eMiniHR.WinApp.Forms.LoginForm.loginBtn_Click(Object sender, EventArgs e) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\LoginForm.cs:line 206
+
+2025-07-12 02:34:22 -【資料庫發生錯誤，請確認連線與語法是否正確。】
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1185
+   at Dapper.SqlMapper.QueryRowImpl[T](IDbConnection cnn, Row row, CommandDefinition& command, Type effectiveType) in /_/Dapper/SqlMapper.cs:line 1306
+   at Dapper.SqlMapper.QueryFirstOrDefault[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 886
+   at ISpan.eMiniHR.DataAccess.DapperRepositories.LoginRepository.GetLogin(String account, String password) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\DapperRepositories\LoginRepository.cs:line 21
+   at ISpan.eMiniHR.WinApp.Forms.LoginForm.loginBtn_Click(Object sender, EventArgs e) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\LoginForm.cs:line 206
+
+2025-07-12 02:34:36 -【資料庫發生錯誤，請確認連線與語法是否正確。】
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1185
+   at Dapper.SqlMapper.QueryRowImpl[T](IDbConnection cnn, Row row, CommandDefinition& command, Type effectiveType) in /_/Dapper/SqlMapper.cs:line 1306
+   at Dapper.SqlMapper.QueryFirstOrDefault[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 886
+   at ISpan.eMiniHR.DataAccess.DapperRepositories.LoginRepository.GetLogin(String account, String password) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\DapperRepositories\LoginRepository.cs:line 21
+   at ISpan.eMiniHR.WinApp.Forms.LoginForm.loginBtn_Click(Object sender, EventArgs e) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\LoginForm.cs:line 206
+
+2025-07-12 02:34:47 -【資料庫發生錯誤，請確認連線與語法是否正確。】
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1185
+   at Dapper.SqlMapper.QueryRowImpl[T](IDbConnection cnn, Row row, CommandDefinition& command, Type effectiveType) in /_/Dapper/SqlMapper.cs:line 1306
+   at Dapper.SqlMapper.QueryFirstOrDefault[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 886
+   at ISpan.eMiniHR.DataAccess.DapperRepositories.LoginRepository.GetLogin(String account, String password) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\DapperRepositories\LoginRepository.cs:line 21
+   at ISpan.eMiniHR.WinApp.Forms.LoginForm.loginBtn_Click(Object sender, EventArgs e) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\LoginForm.cs:line 206
+
+2025-07-12 02:40:11 -【資料庫發生錯誤，請確認連線與語法是否正確。】
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1185
+   at Dapper.SqlMapper.QueryRowImpl[T](IDbConnection cnn, Row row, CommandDefinition& command, Type effectiveType) in /_/Dapper/SqlMapper.cs:line 1306
+   at Dapper.SqlMapper.QueryFirstOrDefault[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 886
+   at ISpan.eMiniHR.DataAccess.DapperRepositories.LoginRepository.GetLogin(String account, String password) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\DapperRepositories\LoginRepository.cs:line 23
+   at ISpan.eMiniHR.WinApp.Forms.LoginForm.loginBtn_Click(Object sender, EventArgs e) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\LoginForm.cs:line 206
+
+2025-07-12 02:40:21 -【資料庫發生錯誤，請確認連線與語法是否正確。】
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1185
+   at Dapper.SqlMapper.QueryRowImpl[T](IDbConnection cnn, Row row, CommandDefinition& command, Type effectiveType) in /_/Dapper/SqlMapper.cs:line 1306
+   at Dapper.SqlMapper.QueryFirstOrDefault[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 886
+   at ISpan.eMiniHR.DataAccess.DapperRepositories.LoginRepository.GetLogin(String account, String password) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\DapperRepositories\LoginRepository.cs:line 23
+   at ISpan.eMiniHR.WinApp.Forms.LoginForm.loginBtn_Click(Object sender, EventArgs e) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\LoginForm.cs:line 206
+
+2025-07-12 02:43:47 -【帳號或密碼錯誤，請重新輸入。】
+   at ISpan.eMiniHR.DataAccess.DapperRepositories.LoginRepository.GetLogin(String account, String password) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\DapperRepositories\LoginRepository.cs:line 37
+   at ISpan.eMiniHR.WinApp.Forms.LoginForm.loginBtn_Click(Object sender, EventArgs e) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\LoginForm.cs:line 206
+
+2025-07-12 02:50:42 -【發生資料庫錯誤】
+   at ISpan.eMiniHR.DataAccess.DapperRepositories.LoginRepository.GetLogin(String account, String password) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\DapperRepositories\LoginRepository.cs:line 36
+   at ISpan.eMiniHR.WinApp.Forms.LoginForm.loginBtn_Click(Object sender, EventArgs e) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\LoginForm.cs:line 206
+
+2025-07-12 02:51:10 -【發生資料庫錯誤】
+   at ISpan.eMiniHR.DataAccess.DapperRepositories.LoginRepository.GetLogin(String account, String password) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\DapperRepositories\LoginRepository.cs:line 36
+   at ISpan.eMiniHR.WinApp.Forms.LoginForm.loginBtn_Click(Object sender, EventArgs e) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\LoginForm.cs:line 206
+
+2025-07-12 02:52:22 -【帳號或密碼錯誤，請重新輸入。】
+   at ISpan.eMiniHR.DataAccess.DapperRepositories.LoginRepository.GetLogin(String account, String password) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\DapperRepositories\LoginRepository.cs:line 36
+   at ISpan.eMiniHR.WinApp.Forms.LoginForm.loginBtn_Click(Object sender, EventArgs e) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\LoginForm.cs:line 206
+
+2025-07-12 03:37:35 -【查無資料】
+   at ISpan.eMiniHR.DataAccess.DapperRepositories.LoginRepository.GetLogin(String account, String password) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\DapperRepositories\LoginRepository.cs:line 31
+   at ISpan.eMiniHR.WinApp.Forms.LoginForm.loginBtn_Click(Object sender, EventArgs e) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\LoginForm.cs:line 201
+
+2025-07-12 03:45:43 -【查無資料】
+   at ISpan.eMiniHR.DataAccess.DapperRepositories.LoginRepository.GetLogin(String account, String password) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\DapperRepositories\LoginRepository.cs:line 31
+   at ISpan.eMiniHR.WinApp.Forms.LoginForm.loginBtn_Click(Object sender, EventArgs e) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\LoginForm.cs:line 201
+
+2025-07-12 03:46:08 -【帳號或密碼錯誤，請重新輸入。】
+   at ISpan.eMiniHR.DataAccess.DapperRepositories.LoginRepository.GetLogin(String account, String password) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\DapperRepositories\LoginRepository.cs:line 38
+   at ISpan.eMiniHR.WinApp.Forms.LoginForm.loginBtn_Click(Object sender, EventArgs e) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\LoginForm.cs:line 201
+
+2025-07-12 03:46:11 -【帳號或密碼錯誤，請重新輸入。】
+   at ISpan.eMiniHR.DataAccess.DapperRepositories.LoginRepository.GetLogin(String account, String password) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.DataAccess\DapperRepositories\LoginRepository.cs:line 38
+   at ISpan.eMiniHR.WinApp.Forms.LoginForm.loginBtn_Click(Object sender, EventArgs e) in D:\20250429_資展國際\FristProject\20250710\ISpan.eMiniHR\ISpan.eMiniHR.WinAPP\Forms\LoginForm.cs:line 201
+
