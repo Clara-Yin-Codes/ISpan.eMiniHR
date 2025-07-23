@@ -1,8 +1,6 @@
 ﻿using ISpan.eMiniHR.DataAccess.Helpers;
 using ISpan.eMiniHR.DataAccess.Models;
 using ISpan.eMiniHR.WinApp.Services;
-using QuestPDF.Fluent;
-using System.Diagnostics;
 
 namespace ISpan.eMiniHR.WinApp.Helper
 {
@@ -20,9 +18,10 @@ namespace ISpan.eMiniHR.WinApp.Helper
         private readonly Func<T, int> _updateFunc;
         private readonly Func<bool> _validateFunc;
         private string _currentAction;
-        private readonly Action _refreshData;
+        private readonly Action<object?> _refreshData;
         private readonly object? _queryViewModel;
         private readonly Action? _exportPDF;
+        private readonly string? _key;
 
         public FormActionHandler(
             BindingSource bindingSource,
@@ -36,9 +35,10 @@ namespace ISpan.eMiniHR.WinApp.Helper
             Func<T, int> updateFunc,
             Func<bool> validateFunc,
             string currentAction,
-            Action refreshData,
+            Action<object?> refreshData,
             object? queryViewModel,
-            Action? exportPDF
+            Action? exportPDF,
+            string key
             )
         {
             _bindingSource = bindingSource;
@@ -55,6 +55,7 @@ namespace ISpan.eMiniHR.WinApp.Helper
             _queryViewModel = queryViewModel;
             _initEdit = initEdit;
             _exportPDF = exportPDF;
+            _key = key;
         }
 
         public string OnAction(string action)
@@ -77,7 +78,8 @@ namespace ISpan.eMiniHR.WinApp.Helper
                         var queryModelProp = formType.GetProperty("QueryModel");
                         var queryModel = queryModelProp?.GetValue(formInstance);
                         // 根據 queryModel 進行查詢
-                    }
+                        _refreshData(queryModel);
+					}
                     break;
 
                 case "新增":
@@ -89,6 +91,10 @@ namespace ISpan.eMiniHR.WinApp.Helper
                     break;
 
                 case "編輯":
+                    if (_getCurrent() == null) {
+                        MessageBox.Show("請選擇記錄");
+                        break;
+					}
                     var editItem = _createNewFunc();
 
                     var props = typeof(EmployeeDto)
@@ -105,14 +111,14 @@ namespace ISpan.eMiniHR.WinApp.Helper
                 case "取消":
                     Cancel(_currentAction, _bindingSource);
 
-                    _refreshData(); // 重新查詢整份清單（從資料庫）
+                    _refreshData(_queryViewModel); // 重新查詢整份清單（從資料庫）
                     _refreshBinding(); // 重新綁定（如果有 BindingSource 的話）
                     _setControlsReadOnly(true); // 回復為唯讀狀態
                     _currentAction = "查詢";
                     break;
 
                 case "刪除":
-                    var id = typeof(T).GetProperty("EmpId")?.GetValue(cur)?.ToString();
+                    var id = typeof(T).GetProperty(_key)?.GetValue(cur)?.ToString();
                     ConfirmAndDelete(id, _deleteFunc, _bindingSource, "資料", _refreshBinding);
                     break;
 
@@ -128,7 +134,7 @@ namespace ISpan.eMiniHR.WinApp.Helper
                         if (result > 0)
                         {
                             MessageBox.Show("儲存成功");
-                            _refreshData(); // 重新查詢整份清單（從資料庫）
+                            _refreshData(_queryViewModel); // 重新查詢整份清單（從資料庫）
                             _refreshBinding();
                             _currentAction = "查詢";
                         }
@@ -212,8 +218,8 @@ namespace ISpan.eMiniHR.WinApp.Helper
         // 儲存邏輯 (委派)
         public delegate bool ValidateFunc();
         public delegate void SetReadOnlyFunc(bool isReadOnly);
-        public delegate void RefreshFunc();
-        public delegate object? GetCurrentFunc();
+		public delegate void RefreshFunc(object? cond = null);
+		public delegate object? GetCurrentFunc();
         public delegate int AddOrUpdateFunc(object data);
         public delegate void ShowLoadingFunc(bool isVisible);
 
@@ -252,7 +258,7 @@ namespace ISpan.eMiniHR.WinApp.Helper
                     MessageBox.Show("儲存成功");
                 }
 
-                refresh();          // 查詢更新資料來源
+                refresh(current);          // 查詢更新資料來源
                 setReadOnly(true);  // 重設唯讀狀態
             }
             catch (Exception ex)

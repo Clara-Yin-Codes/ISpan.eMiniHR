@@ -13,7 +13,7 @@ public class ProgramsConfigRepository
             using (var conn = new SqlConnection(SqlDB.ConnectionString))
             {
                 var sql = new StringBuilder();
-                sql.Append("SELECT p.ProgSysCode, s.SystemName, p.ProgSysId, ");
+                sql.Append("SELECT Rtrim(p.ProgSysCode) ProgSysId, s.SystemName, p.ProgSysId, ");
                 sql.Append("p.ProgId, p.ProgName, p.IsCommon, p.SortOrder ");
                 sql.Append("FROM ProgramsConfig p "); // 取得有效的程式
                 sql.Append("JOIN Systems s ON s.SystemCode=p.ProgSysCode ");

@@ -92,7 +92,12 @@ namespace ISpan.eMiniHR.DataAccess.Models
                 Gender = value ? "F" : "M";
             }
         }
-        public string DepName { get; set; }  // 部門名稱
-        public string? FormatReviseDate => ReviseDate?.ToString("yyyy/MM/dd HH:mm");
+        public string? DepName { get; set; }  // 部門名稱
+		public string? ShiftName { get; set; }  // 班別名稱
+		public string? JobLevelName { get; set; }  // 職等名稱
+		public string? EmployeeTypeName { get; set; }  // 員工類別名稱
+		public string? MgrIdName { get; set; }  // 直屬主管名稱
+
+		public string? FormatReviseDate => ReviseDate?.ToString("yyyy/MM/dd HH:mm");
     }
 }

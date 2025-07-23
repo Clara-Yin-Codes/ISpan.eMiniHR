@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ISpan.eMiniHR.WinApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a0f324dd0bc092fca0b48826beca95bd283fc81d")]
 [assembly: System.Reflection.AssemblyProductAttribute("ISpan.eMiniHR.WinApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ISpan.eMiniHR.WinApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

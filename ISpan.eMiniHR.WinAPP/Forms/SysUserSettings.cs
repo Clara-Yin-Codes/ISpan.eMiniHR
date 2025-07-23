@@ -4,17 +4,7 @@ using ISpan.eMiniHR.DataAccess.Models;
 using ISpan.eMiniHR.WinApp.Helper;
 using ISpan.eMiniHR.WinApp.Interfaces;
 using ISpan.eMiniHR.WinApp.Services;
-using Microsoft.VisualBasic.ApplicationServices;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
+using static ISpan.eMiniHR.DataAccess.DapperRepositories.SysCodesRepository;
 
 namespace ISpan.eMiniHR.WinApp.Forms
 {
@@ -40,14 +30,14 @@ namespace ISpan.eMiniHR.WinApp.Forms
             InitActionHandler(); // 初始化操作處理
         }
 
-        #region 按鈕事件處理
-        private void dataGridView1_Resize(object sender, EventArgs e)
+        #region 清單樣式處理
+        private void dgvUsers_Resize(object sender, EventArgs e)
         {
             ControlHelper.SetGridViewColumnSize(dgvUsers); // 調整清單欄位大小
-            splitContainer1.SplitterDistance = 210; // 設定分割線位置
+            splitContainer1.SplitterDistance = 230; // 設定分割線位置
         }
 
-        private void dataGridView1_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)
+        private void dgvUsers_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)
         {
             var row = dgvUsers.Rows[e.RowIndex];
             if (row.DataBoundItem is UsersDto user)
@@ -83,6 +73,24 @@ namespace ISpan.eMiniHR.WinApp.Forms
                 };
 
             ControlHelper.SetGridView(dgvUsers, columnDefs, users_bindingSource);
+
+            var columnDefs_D = new List<(string, string, bool)>
+                {
+                    ("ProgSysId", "程式代碼", false),
+                    ("ProgName", "程式名稱", false),
+                    ("Queryable", "查詢", true),
+                    ("Addable", "新增", true),
+                    ("Editable", "編輯", true),
+                    ("Deletable", "刪除", true),
+                    ("Voidable", "作廢", true),
+                    ("Printable", "列印", true),
+                    ("Downloadable", "匯出", true),
+                    ("Testable", "測試", true),
+                };
+
+            dgvProgramPermissions.Columns.Clear();
+
+            ControlHelper.SetGridViewDetails(dgvProgramPermissions, columnDefs_D, programPermissions_bindingSource);
         }
 
         /// <summary>
@@ -90,20 +98,12 @@ namespace ISpan.eMiniHR.WinApp.Forms
         /// </summary>
         public void SetCboItems()
         {
-            //var emps = EmployeeQueryRepository.GetEmployees();
-            //ControlHelper.BindMultipleComboBoxes(employee_BindingSource, 1, new[]
-            //{
-            //    (cboShift, ShiftsRepository.GetShifts(), "ShiftName", "ShiftCode", "Shift"), // 班別
-            //    (cboDepId, deptBS.DataSource, "FormatDept", "DepId", "DepId"), // 部門
-            //    (cboJobLevel, JobGradesRepository.GetJobGrades(), "JobLevelName", "JobLevelCode", "JobLevel"), // 職等
-            //    (cboEmployeeType, EmployeeTypesRepository.GetEmployeeTypes(), "TypeName", "TypeCode", "EmployeeType") // 員工類別
-            //});
+            var sysCond = SysCodesRepository.GetSysCodes(new SysCodesModel { CodeId = "01" });
 
-            //ControlHelper.BindMultipleComboBoxes(employee_BindingSource, 2, new[]
-            //{
-            //    (cboMgrId, (object)emps, "EmpNm", "EmpId", "MgrId"),
-            //    (cboReviser, (object)LoginRepository.GetAccounts().ToList(), "AccountName", "Account", "Reviser")
-            //});
+            ControlHelper.BindMultipleComboBoxes(users_bindingSource, 1, new[]
+            {
+                (cboSysRole,(object)sysCond,"CodeDesc","CodeNO","SysRole")
+            });
         }
         #endregion
 
@@ -114,7 +114,15 @@ namespace ISpan.eMiniHR.WinApp.Forms
         /// <returns></returns>
         public UsersDto? Current()
         {
-            return users_bindingSource.Current as UsersDto;
+            var user = users_bindingSource.Current as UsersDto;
+
+            if (user != null)
+            {
+                //programPermissions_bindingSource.DataSource = user.Permissions;
+                programPermissions_bindingSource.ResetBindings(false); // 更新畫面
+            }
+
+            return user;
         }
 
         /// <summary>
@@ -123,18 +131,23 @@ namespace ISpan.eMiniHR.WinApp.Forms
         private void BindingSourceRestBinding()
         {
             users_bindingSource.EndEdit(); // 結束編輯
-            users_bindingSource.ResetBindings(false);
+            users_bindingSource.ResetBindings(false); // 重新綁定資料來源
+
+            programPermissions_bindingSource.ResetBindings(false); // 明細寫法
+
+            dgvProgramPermissions.Refresh(); // 強制重繪畫面
         }
 
         /// <summary>
         /// 取得資料
         /// </summary>
         /// <returns></returns>
-        public IEnumerable<UsersDto> GetUsers()
+        public IEnumerable<UsersDto> GetUsers(UserQueryViewModel cond = null)
         {
             try
             {
-                return UsersRepository.GetUsers();
+                cond ??= new UserQueryViewModel(); // 若為 null 則建立預設條件
+                return UsersRepository.GetUsers(cond);
             }
             catch (Exception ex)
             {
@@ -162,9 +175,10 @@ namespace ISpan.eMiniHR.WinApp.Forms
                 UserEfRepository.Update,
                 CheckData,
                 _currentAction,
-                Query, // 刷新資料
+                refreshData: cond => Query(cond as UserQueryViewModel), // 刷新資料
                 new UserQueryViewModel(),
-                null
+                null,
+                "UserId"
             );
         }
 
@@ -178,26 +192,16 @@ namespace ISpan.eMiniHR.WinApp.Forms
             //ReviseDate = DateTime.Now
         };
 
-        private class UserQueryViewModel
+        /// <summary>
+        /// 查詢條件
+        /// </summary>
+        public class UserQueryViewModel : DataAccess.DapperRepositories.UserQueryViewModel
         {
-            public string? EmpId { get; set; }
-            public string? EmpNm { get; set; }
-            public string? DepId { get; set; }
-            public string? DepId2 { get; set; }
-            public string? DepId3 { get; set; }
-            public string? DepId4 { get; set; }
-            public string? DepId6 { get; set; }
-            public string? DepId7 { get; set; }
-            public string? DepId8 { get; set; }
-            public string? DepId9 { get; set; }
-            public string? DepId10 { get; set; }
-            public string? DepId11 { get; set; }
-            public string? DepId12 { get; set; }
-            public static readonly Dictionary<string, string> DisplayNames = new()
+            public static readonly Dictionary<string, QueryConditionForm<UserQueryViewModel>.FieldDisplayInfo> DisplayNames = new()
             {
-                { "EmpId", "員工編號" },
-                { "EmpNm", "姓名" },
-                { "DepId", "部門代號" }
+                { "account", new() { Label = "員工編號", ControlType = "Text" } },
+                { "isActive", new() { Label = "啟用", ControlType = "Check" , DefaultValue = true} },
+                { "isNotActive", new() { Label = "不啟用", ControlType = "Check" , DefaultValue = false} }
             };
         }
 
@@ -209,11 +213,27 @@ namespace ISpan.eMiniHR.WinApp.Forms
         /// <summary>
         /// 查詢清單
         /// </summary>
-        private void Query()
+        private void Query(UserQueryViewModel? cond = null)
         {
-            _userList = GetUsers() ?? Enumerable.Empty<UsersDto>();
+            _userList = GetUsers(cond) ?? Enumerable.Empty<UsersDto>();
+            users_bindingSource.DataSource = _userList;
 
-            //ControlHelper.TranDeptName(_userList, deptBS, employee_BindingSource); // 部門代號轉部門名稱
+            // 綁定明細來源（多對一：使用者 ➜ 權限清單）
+            programPermissions_bindingSource.DataSource = users_bindingSource;
+            programPermissions_bindingSource.DataMember = "Permissions"; // 明確指定屬性名稱
+
+            // 4. 指定到 DataGridView
+            dgvProgramPermissions.DataSource = programPermissions_bindingSource;
+
+            // 轉名稱
+            //ControlHelper.TranslateProperty(
+            //	_employeeList,
+            //	emp => emp.DepId,
+            //	(emp, name) => emp.DepName = name,
+            //	DeptsRepository.GetDepts().Select(d => new KeyValuePair<string, string>(d.DepId, d.DepName)),
+            //	deptBS,
+            //	employee_BindingSource
+            //);
             BindingSourceRestBinding();
         }
 
@@ -230,7 +250,7 @@ namespace ISpan.eMiniHR.WinApp.Forms
                 getCurrent: () => Current(),
                 addFunc: data => UserEfRepository.Add((UsersDto)data),
                 updateFunc: data => UserEfRepository.Update((UsersDto)data),
-                refresh: Query,
+                refresh: cond => Query(cond as UserQueryViewModel),
                 setLoading: visible => picLoading.Visible = visible
             );
         }
@@ -243,22 +263,17 @@ namespace ISpan.eMiniHR.WinApp.Forms
         {
             var cur = Current();
 
-            //var validator = new FormValidator(
-            //    new(() => string.IsNullOrWhiteSpace(cur.EmpNm), "請輸入員工姓名"),
-            //    new(() => string.IsNullOrWhiteSpace(cur.IdNumber), "請輸入身份證字號"),
-            //    new(() => cur.BirthDate == null, "請選擇生日"),
-            //    new(() => string.IsNullOrWhiteSpace(cur.Gender), "請選擇性別"),
-            //    new(() => string.IsNullOrWhiteSpace(cur.Shift), "請選擇班別"),
-            //    new(() => string.IsNullOrWhiteSpace(cur.DepId), "請選擇部門"),
-            //    new(() => string.IsNullOrWhiteSpace(cur.JobLevel), "請選擇職等"),
-            //    new(() => string.IsNullOrWhiteSpace(cur.EmployeeType), "請選擇員工類別"),
-            //    new(() => string.IsNullOrWhiteSpace(cur.Tel), "請輸入電話"),
-            //    new(() => string.IsNullOrWhiteSpace(cur.EmergencyContact), "請輸入緊急聯絡人"),
-            //    new(() => chkIsResigned.Checked && cur.ResignDate == null, "請選擇離職日期"),
-            //    new(() => chkIsResigned.Checked && string.IsNullOrWhiteSpace(cur.ResignReason), "請輸入離職原因")
-            //);
-            //return validator.Validate();
-            return false;
+            var validator = new FormValidator(
+                new(() => string.IsNullOrWhiteSpace(cur.Account), "請輸入帳號"),
+                new(() => string.IsNullOrWhiteSpace(cur.AccountName), "請輸入帳號名稱"),
+
+                new(() => cur.PasswordHash != null &&
+                string.IsNullOrWhiteSpace(cur.PasswordHashSet), "請輸入密碼"),
+
+                new(() => string.IsNullOrWhiteSpace(cur.SysRole), "請選擇登入身分")
+            );
+            return validator.Validate();
+            //return false;
         }
 
         /// <summary>
@@ -268,39 +283,35 @@ namespace ISpan.eMiniHR.WinApp.Forms
         internal void SetControlsReadOnly(bool isReadOnly)
         {
             ControlHelper.SetGridViewEnable(dgvUsers, isReadOnly); // 清單唯讀狀態
+            ControlHelper.SetGridViewEnable(dgvProgramPermissions, !isReadOnly); // 清單唯讀狀態
 
-            //txtEmpNm.ReadOnly = isReadOnly;               // 員工姓名
-            //txtIdNumber.ReadOnly = isReadOnly;            // 身份證字號
-            //dateBirthDate.Enabled = !isReadOnly;          // 日期控制項通常只能用 Enabled
-            //txtEmail.ReadOnly = isReadOnly;               // 電子郵件
-            //txtAddress_Registered.ReadOnly = isReadOnly;  // 戶籍地址
-            //txtAddress_Contact.ReadOnly = isReadOnly;     // 通訊地址
+            if (isReadOnly)
+            {
+                dgvProgramPermissions.DefaultCellStyle.SelectionBackColor = Color.White;    // 被選取背景色（淡一點）
+            }
+            else {
+                dgvProgramPermissions.DefaultCellStyle.SelectionBackColor = Color.LightBlue;    // 被選取背景色（淡一點）
+            }
 
-            //radioGenderM.AutoCheck = !isReadOnly;         // 性別男（不使用 Enabled，維持樣式）
-            //radioGenderF.AutoCheck = !isReadOnly;         // 性別女
+            if (Current().SysRole == "ad")
+            {
+                txtAccount.ReadOnly = isReadOnly;
+                txtAccountName.ReadOnly = isReadOnly;
+            }
+            else {
+                txtAccount.ReadOnly = true;
+                txtAccountName.ReadOnly = true;
+            }
 
-            //chkIsForeign.AutoCheck = !isReadOnly;         // 是否本國人
-            //chkIsMarried.AutoCheck = !isReadOnly;         // 是否已婚
+            if (string.IsNullOrWhiteSpace(Current().UserId) == true && isReadOnly==false) {
+                Current().IsActive = true;
+                BindingSourceRestBinding();
+            }
+            
+            txtPasswordHash.ReadOnly = isReadOnly;
 
-            //cboShift.DropDownStyle = isReadOnly ? ComboBoxStyle.Simple : ComboBoxStyle.DropDownList; // 禁止選擇但仍顯示
-            //cboShift.Enabled = !isReadOnly;
-
-            //cboDepId.Enabled = !isReadOnly;               // 部門
-            //cboMgrId.Enabled = !isReadOnly;               // 直屬主管
-            //cboJobLevel.Enabled = !isReadOnly;            // 職等
-            //cboEmployeeType.Enabled = !isReadOnly;        // 員工類別
-
-            //txtCustomSalary.ReadOnly = isReadOnly;        // 個人核定薪資
-
-            //chkIsWelfareMember.AutoCheck = !isReadOnly;   // 是否參加福利會
-
-            //dateHireDate.Enabled = !isReadOnly;           // 到職日期
-            //chkIsResigned.AutoCheck = !isReadOnly;        // 是否離職
-            //dateResignDate.Enabled = !isReadOnly;         // 離職日期
-            //txtMemo.ReadOnly = isReadOnly;               // 備註
-            //txtTel.ReadOnly = isReadOnly;                // 電話號碼
-            //txtEmergencyContact.ReadOnly = isReadOnly;   // 緊急聯絡人
-            //txtResignReason.ReadOnly = isReadOnly;       // 離職原因
+            radioActiveN.Enabled = !isReadOnly; // 失效狀態可編輯
+            radioActiveY.Enabled = !isReadOnly; // 有效狀態可編輯
 
             this.SetPermissions(isReadOnly ? actionArr : null); // 清除權限按鈕，避免新增後仍有編輯按鈕可用 / 恢復所有按鈕權限
         }
@@ -308,7 +319,7 @@ namespace ISpan.eMiniHR.WinApp.Forms
 
         #region IFormBindable 介面實作
         void IFormBindable.OnPermissionAction(string action) => _actionHandler.OnAction(action);
-        void IFormBindable.InitEdit() => InitEdit(); // 若你有分開處理
+        void IFormBindable.InitEdit() => InitEdit(); // 若有分開處理
         void IFormBindable.SetControlsReadOnly(bool readOnly) => SetControlsReadOnly(readOnly);
         void IFormBindable.SaveData(string action) => SaveData(action);
         bool IFormBindable.CheckData() => CheckData();

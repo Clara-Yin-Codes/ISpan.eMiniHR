@@ -3229,11 +3229,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\20250429_資展國際\\ISpan.eMiniHR\\ISpan.eMiniHR.WinAPP\\ISpan.eMiniHR.WinApp.csproj",
+      "projectUniqueName": "D:\\20250429_資展國際\\FristProject\\ISpan.eMiniHR\\ISpan.eMiniHR.WinAPP\\ISpan.eMiniHR.WinApp.csproj",
       "projectName": "ISpan.eMiniHR.WinApp",
-      "projectPath": "D:\\20250429_資展國際\\ISpan.eMiniHR\\ISpan.eMiniHR.WinAPP\\ISpan.eMiniHR.WinApp.csproj",
+      "projectPath": "D:\\20250429_資展國際\\FristProject\\ISpan.eMiniHR\\ISpan.eMiniHR.WinAPP\\ISpan.eMiniHR.WinApp.csproj",
       "packagesPath": "C:\\Users\\qwop1\\.nuget\\packages\\",
-      "outputPath": "D:\\20250429_資展國際\\ISpan.eMiniHR\\ISpan.eMiniHR.WinAPP\\obj\\",
+      "outputPath": "D:\\20250429_資展國際\\FristProject\\ISpan.eMiniHR\\ISpan.eMiniHR.WinAPP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -3255,8 +3255,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "D:\\20250429_資展國際\\ISpan.eMiniHR\\ISpan.eMiniHR.DataAccess\\ISpan.eMiniHR.DataAccess.csproj": {
-              "projectPath": "D:\\20250429_資展國際\\ISpan.eMiniHR\\ISpan.eMiniHR.DataAccess\\ISpan.eMiniHR.DataAccess.csproj"
+            "D:\\20250429_資展國際\\FristProject\\ISpan.eMiniHR\\ISpan.eMiniHR.DataAccess\\ISpan.eMiniHR.DataAccess.csproj": {
+              "projectPath": "D:\\20250429_資展國際\\FristProject\\ISpan.eMiniHR\\ISpan.eMiniHR.DataAccess\\ISpan.eMiniHR.DataAccess.csproj"
             }
           }
         }

@@ -29,6 +29,10 @@ namespace ISpan.eMiniHR.DataAccess.Helpers
                 cfg.CreateMap<UsersDto, UsersEntity>();
                 cfg.CreateMap<UsersEntity, UsersDto>();
 
+                // 權限設定
+                cfg.CreateMap<ProgramPermissionsDto, ProgramPermissionsEntity>();
+                cfg.CreateMap<ProgramPermissionsEntity, ProgramPermissionsDto>();
+
                 // 部門
                 //cfg.CreateMap<DeptDto, DeptEntity>();
                 //cfg.CreateMap<DeptEntity, DeptDto>();

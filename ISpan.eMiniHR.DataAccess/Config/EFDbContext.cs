@@ -7,6 +7,7 @@ namespace ISpan.eMiniHR.DataAccess.Config
     {
         public DbSet<EmployeeEntity> Employees { get; set; }
         public DbSet<UsersEntity> Users { get; set; }
+        public DbSet<ProgramPermissionsEntity> ProgramPermissions { get; set; }
         //public DbSet<DeptsDto> Depts { get; set; }
         //public DbSet<JobGradesDto> JobGrades { get; set; }
 
@@ -23,6 +24,9 @@ namespace ISpan.eMiniHR.DataAccess.Config
         {
             modelBuilder.Entity<EmployeeEntity>().ToTable("Employee"); // 顯示指定資料表名稱
             modelBuilder.Entity<UsersEntity>().ToTable("Users");
+            modelBuilder.Entity<ProgramPermissionsEntity>().HasKey(p => new { p.ProgSysId, p.EmpId });
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 }

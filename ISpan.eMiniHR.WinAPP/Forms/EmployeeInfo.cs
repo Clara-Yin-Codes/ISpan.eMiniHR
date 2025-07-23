@@ -20,7 +20,14 @@ namespace ISpan.eMiniHR.WinApp.Forms
 		/// 員工基本資料
 		/// </summary>
 		private IEnumerable<EmployeeDto> _employeeList = Enumerable.Empty<EmployeeDto>(); // 更保險，預設為空集合
-		BindingSource deptBS = new BindingSource(); // 部門資料綁定來源
+
+		//資料綁定來源
+		BindingSource deptBS = new BindingSource(); // 部門
+		BindingSource shiftBS = new BindingSource(); // 班別
+		BindingSource jobLevelBS = new BindingSource(); // 職等
+		BindingSource employeeTypeBS = new BindingSource(); // 員工類別
+		BindingSource mgrIdBS = new BindingSource(); // 直屬主管
+
 		string _currentAction = "查詢"; // 當前操作狀態
 		string[] actionArr = new[] { "查詢", "新增", "編輯", "取消", "儲存", "刪除", "匯出" }; // 權限按鈕名稱陣列
 
@@ -96,7 +103,11 @@ namespace ISpan.eMiniHR.WinApp.Forms
 		/// </summary>
 		public void SetCboItems()
 		{
-			var emps = EmployeeQueryRepository.GetEmployees();
+			var emps = EmployeeQueryRepository.GetEmployees(null);
+
+			var deptList = DeptsRepository.GetDepts().ToList(); // 回傳 List<DeptsDto>
+			deptBS.DataSource = deptList;
+
 			ControlHelper.BindMultipleComboBoxes(employee_BindingSource, 1, new[]
 			{
 				(cboShift, ShiftsRepository.GetShifts(), "ShiftName", "ShiftCode", "Shift"), // 班別
@@ -157,11 +168,12 @@ namespace ISpan.eMiniHR.WinApp.Forms
 		/// 取得員工資料
 		/// </summary>
 		/// <returns></returns>
-		public IEnumerable<EmployeeDto> GetEmployees()
+		public IEnumerable<EmployeeDto> GetEmployees(EmployeeQueryViewModel cond = null)
 		{
 			try
 			{
-				return EmployeeQueryRepository.GetEmployees();
+				cond ??= new EmployeeQueryViewModel(); // 若為 null 則建立預設條件
+				return EmployeeQueryRepository.GetEmployees(cond);
 			}
 			catch (Exception ex)
 			{
@@ -189,9 +201,10 @@ namespace ISpan.eMiniHR.WinApp.Forms
 				EmployeeEfRepository.Update,
 				CheckData,
 				_currentAction,
-				Query, // 刷新資料
+				refreshData: cond => Query(cond as EmployeeQueryViewModel), // 刷新資料
 				new EmployeeQueryViewModel(),
-                ExportPDF // 匯出PDF功能 (是把「一個可以執行的函數（delegate）」傳進去，而不是「執行函數的結果」)
+                ExportPDF, // 匯出PDF功能 (是把「一個可以執行的函數（delegate）」傳進去，而不是「執行函數的結果」)
+				"EmpId"
             );
 		}
 
@@ -201,46 +214,81 @@ namespace ISpan.eMiniHR.WinApp.Forms
 		/// <param name="action">編輯</param>
 		private EmployeeDto InitEdit() => new EmployeeDto
 		{
-			Reviser = LoginSession.User.EmpId,
+			Reviser = LoginSession.User.Account,
 			ReviseDate = DateTime.Now
 		};
-
-		private class EmployeeQueryViewModel
-		{
-			public string? EmpId { get; set; }
-			public string? EmpNm { get; set; }
-			public string? DepId { get; set; }
-			public string? DepId2 { get; set; }
-			public string? DepId3 { get; set; }
-			public string? DepId4 { get; set; }
-			public string? DepId6 { get; set; }
-			public string? DepId7 { get; set; }
-			public string? DepId8 { get; set; }
-			public string? DepId9 { get; set; }
-			public string? DepId10 { get; set; }
-			public string? DepId11 { get; set; }
-			public string? DepId12 { get; set; }
-			public static readonly Dictionary<string, string> DisplayNames = new()
-			{
-				{ "EmpId", "員工編號" },
-				{ "EmpNm", "姓名" },
-				{ "DepId", "部門代號" }
-			};
-		}
 
 		internal void OnPermissionAction(string action)
 		{
 			_currentAction = _actionHandler.OnAction(action);
 		}
 
+		public class EmployeeQueryViewModel : DataAccess.DapperRepositories.EmployeeQueryViewModel
+		{
+			public static readonly Dictionary<string, QueryConditionForm<EmployeeQueryViewModel>.FieldDisplayInfo> DisplayNames = new()
+			{
+				{ "EmpId", new() { Label = "員工編號", ControlType = "Text" } },
+				{ "EmpNm", new() { Label = "姓名", ControlType = "Text" } },
+				{ "DepId", new() { Label = "部門", ControlType = "Combo", DataSource = DeptsRepository.GetDepts(), DisplayMember = "DepName", ValueMember = "DepId" } },
+				{ "CuseY", new() { Label = "在職", ControlType = "Check" , DefaultValue = true} },
+				{ "CuseN", new() { Label = "離職", ControlType = "Check" , DefaultValue = false} }
+			};
+		}
+
 		/// <summary>
 		/// 查詢員工清單
 		/// </summary>
-		private void Query()
+		private void Query(EmployeeQueryViewModel? cond = null)
 		{
-			_employeeList = GetEmployees() ?? Enumerable.Empty<EmployeeDto>();
+			cond ??= new EmployeeQueryViewModel(); // 若為 null 則建立預設條件
 
-			ControlHelper.TranDeptName(_employeeList, deptBS, employee_BindingSource); // 部門代號轉部門名稱
+			_employeeList = GetEmployees(cond) ?? Enumerable.Empty<EmployeeDto>();
+
+			// 轉名稱
+			ControlHelper.TranslateProperty(
+				_employeeList,
+				emp => emp.DepId,
+				(emp, name) => emp.DepName = name,
+				DeptsRepository.GetDepts().Select(d => new KeyValuePair<string, string>(d.DepId, d.DepName)),
+				deptBS,
+				employee_BindingSource
+			);
+
+			ControlHelper.TranslateProperty(
+				_employeeList,
+				emp => emp.Shift,
+				(emp, name) => emp.ShiftName = name,
+				ShiftsRepository.GetShifts().Select(s => new KeyValuePair<string, string>(s.ShiftCode, s.ShiftName)),
+				shiftBS,
+				employee_BindingSource
+			);
+
+			ControlHelper.TranslateProperty(
+				_employeeList,
+				emp => emp.JobLevel,
+				(emp, name) => emp.JobLevelName = name,
+				JobGradesRepository.GetJobGrades().Select(s => new KeyValuePair<string, string>(s.JobLevelCode, s.JobLevelName)),
+				jobLevelBS,
+				employee_BindingSource
+			);
+
+			ControlHelper.TranslateProperty(
+				_employeeList,
+				emp => emp.EmployeeType,
+				(emp, name) => emp.EmployeeTypeName = name,
+				EmployeeTypesRepository.GetEmployeeTypes().Select(s => new KeyValuePair<string, string>(s.TypeCode, s.TypeName)),
+				employeeTypeBS,
+				employee_BindingSource
+			);
+
+			ControlHelper.TranslateProperty(
+				_employeeList,
+				emp => emp.MgrId,
+				(emp, name) => emp.MgrIdName = name,
+				EmployeeQueryRepository.GetEmployees(null).Select(s => new KeyValuePair<string, string>(s.EmpId, s.EmpNm)),
+				mgrIdBS,
+				employee_BindingSource
+			);
 			BindingSourceRestBinding();
 		}
 
@@ -259,7 +307,7 @@ namespace ISpan.eMiniHR.WinApp.Forms
 				getCurrent: () => Current(),
 				addFunc: data => EmployeeEfRepository.Add((EmployeeDto)data),
 				updateFunc: data => EmployeeEfRepository.Update((EmployeeDto)data),
-				refresh: Query,
+				refresh: cond => Query(cond as EmployeeQueryViewModel),
 				setLoading: visible => picLoading.Visible = visible
 			);
 		}
@@ -585,7 +633,7 @@ namespace ISpan.eMiniHR.WinApp.Forms
 
         #endregion
 
-        #region 匯出Excel
+        #region 匯出處理
         internal void ExportPDF()
         {
             try
@@ -601,14 +649,22 @@ namespace ISpan.eMiniHR.WinApp.Forms
 					$"員工基本資料_{GetPropValue(emp, "EmpId")}_{GetPropValue(emp, "EmpNm")}.pdf"
 				);
 
-                string imgPath = Path.Combine(_imgDir, emp.ImgFileName);
+                string imgPath = null; // 預設圖片路徑為 null
 
-				if (File.Exists(imgPath) == false) imgPath = null;
+				if (string.IsNullOrWhiteSpace(emp.ImgFileName) == false) {
+                    imgPath = Path.Combine(_imgDir, emp.ImgFileName);
+
+                    if (File.Exists(imgPath) == false) imgPath = null;
+                }
 
                 var pdf = new GeneratePdfService(emp, imgPath);
-				pdf.GeneratePdf(filePath);
 
-				Process.Start("explorer", filePath);
+                pdf.GeneratePdf(filePath);
+
+                if (File.Exists(filePath))
+                {
+                    Process.Start("explorer", filePath);
+                }
             }
             catch (Exception ex)
             {

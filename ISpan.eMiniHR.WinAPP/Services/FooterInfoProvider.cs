@@ -58,7 +58,7 @@ namespace ISpan.eMiniHR.WinApp.Services
             panel.Controls.Add(new Label
             {
                 //Text = $"登入者：{LoginUserInfo.LoginSession.CurrentUser.EmpName}",
-                Text = $"登入者：{LoginSession.User.EmpNm}",
+                Text = $"登入者：{LoginSession.User.AccountName}",
                 Dock = DockStyle.Left,
                 AutoSize = true,
                 Font = new Font("微軟正黑體", 12, FontStyle.Bold),

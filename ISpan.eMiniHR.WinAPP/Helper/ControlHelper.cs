@@ -8,35 +8,88 @@ namespace ISpan.eMiniHR.WinApp.Helper
     /// </summary>
     public static class ControlHelper
     {
-        /// <summary>
-        /// 設定清單中的部門名稱
-        /// </summary>
-        /// <param name="employees"></param>
-        /// <param name="source"></param>
-        public static void TranDeptName(IEnumerable<EmployeeDto> employees, BindingSource source, BindingSource setSource)
-        {
-            // 取得部門清單並設定到 ComboBox 的 BindingSource
-            var deptList = DeptsRepository.GetDepts().ToList();
+		/// <summary>
+		/// 設定清單中的部門名稱
+		/// </summary>
+		/// <param name="employees"></param>
+		/// <param name="source"></param>
+		/// 
+		public static void TranslateProperty<TDto, TKey>(
+			IEnumerable<TDto> employees,
+			Func<TDto, TKey> keySelector,                       // 取得外鍵值
+			Action<TDto, string> setNameAction,                 // 設定名稱的動作
+			IEnumerable<KeyValuePair<TKey, string>> refList,    // 對照表 (如 DepId -> DepName)
+			BindingSource source,
+			BindingSource setSource)
+		{
+			// 設定來源 BindingSource
+			source.DataSource = refList.ToList();
 
-            source.DataSource = deptList;
+			// 建立字典供查詢名稱
+			var refDict = refList.ToDictionary(x => x.Key, x => x.Value);
 
-            // 轉換成 Dictionary 方便查找 DepName
-            var depts = deptList.ToDictionary(d => d.DepId, d => d.DepName);
+			// 為每筆 EmployeeDto 設定對應的名稱
+			foreach (var emp in employees)
+			{
+				var key = keySelector(emp);
+                if (key != null)
+                {
+                    var name = refDict.ContainsKey(key) ? refDict[key] : "(未指定)";
+                    setNameAction(emp, name);
+                }
+			}
 
-            // 將 DepName 設定到每一筆 EmployeeDto
-            foreach (var emp in employees)
-            {
-                emp.DepName = depts.ContainsKey(emp.DepId) ? depts[emp.DepId] : "(未指定)";
-            }
+			// 更新資料來源
+			setSource.DataSource = employees.ToList();
+		}
+		//public static void TranDeptName(IEnumerable<EmployeeDto> employees, BindingSource source, BindingSource setSource)
+		//{
+		//    // 取得部門清單並設定到 ComboBox 的 BindingSource
+		//    var deptList = DeptsRepository.GetDepts().ToList();
 
-            setSource.DataSource = employees.ToList();
-        }
+		//    source.DataSource = deptList;
 
-        /*
+		//    // 轉換成 Dictionary 方便查找 DepName
+		//    var depts = deptList.ToDictionary(d => d.DepId, d => d.DepName);
+
+		//    // 將 DepName 設定到每一筆 EmployeeDto
+		//    foreach (var emp in employees)
+		//    {
+		//        emp.DepName = depts.ContainsKey(emp.DepId) ? depts[emp.DepId] : "(未指定)";
+		//    }
+
+		//    setSource.DataSource = employees.ToList();
+		//}
+
+		/// <summary>
+		/// 設定
+		/// </summary>
+		/// <param name="employees"></param>
+		/// <param name="source"></param>
+		//public static void TranDeptName(IEnumerable<EmployeeDto> employees, BindingSource source, BindingSource setSource)
+		//{
+		//	// 取得部門清單並設定到 ComboBox 的 BindingSource
+		//	var deptList = DeptsRepository.GetDepts().ToList();
+
+		//	source.DataSource = deptList;
+
+		//	// 轉換成 Dictionary 方便查找 DepName
+		//	var depts = deptList.ToDictionary(d => d.DepId, d => d.DepName);
+
+		//	// 將 DepName 設定到每一筆 EmployeeDto
+		//	foreach (var emp in employees)
+		//	{
+		//		emp.DepName = depts.ContainsKey(emp.DepId) ? depts[emp.DepId] : "(未指定)";
+		//	}
+
+		//	setSource.DataSource = employees.ToList();
+		//}
+
+		/*
          允許 object? 資料來源 + 完整封裝
         將 BindComboBox 包成泛型方法，支援強型別 List<T> 或一般 object。
         */
-        public static void BindMultipleComboBoxes(
+		public static void BindMultipleComboBoxes(
         BindingSource bindingSource, int type,
         (ComboBox cbo, object dataSource, string display, string value, string bindField)[] items)
         {
@@ -136,7 +189,7 @@ namespace ISpan.eMiniHR.WinApp.Helper
         /// <param name="gridView"></param>
         /// <param name="isReadOnly"></param>
         public static void SetGridViewEnable(DataGridView gridView, bool isReadOnly) {
-            gridView.ReadOnly = isReadOnly;         // 鎖定內容不可編輯
+            //gridView.ReadOnly = isReadOnly;         // 鎖定內容不可編輯
             gridView.Enabled = isReadOnly;          // 保留滾動功能
             gridView.AllowUserToOrderColumns = !isReadOnly;
             gridView.AllowUserToResizeColumns = !isReadOnly;
@@ -192,6 +245,65 @@ namespace ISpan.eMiniHR.WinApp.Helper
             dgv.MultiSelect = allowMultiSelect; // 是否允許多選
             dgv.DataSource = dataSource; // 綁定資料來源
             dgv.ReadOnly = true; // 設定為唯讀
+            dgv.RowHeadersVisible = false; // 隱藏行標題
+            dgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize; // 自動調整欄位標題高度
+            dgv.AllowUserToAddRows = false; // 禁止新增行
+            dgv.AllowUserToDeleteRows = false; // 禁止刪除行
+            dgv.AutoGenerateColumns = false; // 禁止自動生成欄位
+            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells; // 自動調整欄位寬度
+            dgv.BackgroundColor = SystemColors.ControlLight; // 設定背景色
+        }
+
+        /// <summary>
+        /// 快速設定 Details 欄位與綁定資料來源
+        /// </summary>
+        /// <param name="dgv">DataGridView</param>
+        /// <param name="columns">欄位設定</param>
+        /// <param name="dataSource">資料來源</param>
+        /// <param name="allowMultiSelect">是否支援多選</param>
+        public static void SetGridViewDetails(
+            DataGridView dgv,
+            List<(string Property, string Header, bool check)>? columns,
+            object dataSource,
+            bool allowMultiSelect = false
+        )
+        {
+            dgv.AutoGenerateColumns = false;
+            dgv.Columns.Clear();
+
+            // 設定欄位資料
+            if (columns != null)
+            {
+                foreach (var (property, header, check) in columns)
+                {
+                    if (check==true)
+                    {
+                        dgv.Columns.Add(new DataGridViewCheckBoxColumn
+                        {
+                            DataPropertyName = property,
+                            HeaderText = header
+                        });
+                    }
+                    else 
+                    {
+                        dgv.Columns.Add(new DataGridViewTextBoxColumn
+                        {
+                            DataPropertyName = property,
+                            HeaderText = header,
+                            ReadOnly = true // 唯讀
+                        });
+                    }
+                }
+            }
+
+            // 設定清單樣式
+            dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect; // 選取整列
+            dgv.DefaultCellStyle.SelectionBackColor = Color.LightBlue;    // 被選取背景色（淡一點）
+            dgv.DefaultCellStyle.SelectionForeColor = Color.Black;           // 被選取文字色
+
+            dgv.MultiSelect = allowMultiSelect; // 是否允許多選
+            dgv.DataSource = dataSource; // 綁定資料來源
+            //dgv.ReadOnly = true; // 設定為唯讀
             dgv.RowHeadersVisible = false; // 隱藏行標題
             dgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize; // 自動調整欄位標題高度
             dgv.AllowUserToAddRows = false; // 禁止新增行

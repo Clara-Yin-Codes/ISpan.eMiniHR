@@ -2,6 +2,8 @@
 using ISpan.eMiniHR.WinApp.Properties;
 using ISpan.eMiniHR.WinApp.Services;
 using System.Drawing.Drawing2D;
+using System.Security.Cryptography;
+using System.Text;
 using static ISpan.eMiniHR.WinApp.Services.ErrorHandler;
 using Timer = System.Windows.Forms.Timer;
 
@@ -210,6 +212,7 @@ namespace ISpan.eMiniHR.WinApp.Forms
 			{
 				string account = txtAccunt.Text.Trim();
 				string password = txtPassword.Text;
+				byte[] bytePassword;
 
 				// 驗證帳號密碼是否為空
 				if (string.IsNullOrWhiteSpace(account) || string.IsNullOrWhiteSpace(password))
@@ -218,17 +221,21 @@ namespace ISpan.eMiniHR.WinApp.Forms
 					return;
 				}
 
-				var user = LoginRepository.GetLogin(account, password);
-
-				if (user == null)
+				using (SHA256 sha256 = SHA256.Create()) // 抽象類別是不能建物件的，256是位元
 				{
-					MessageBox.Show("帳號或密碼錯誤", "登入失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
-					txtPassword.Text = string.Empty;
-					return;
-				}
+					bytePassword = Encoding.UTF8.GetBytes(password);
+					var user = LoginRepository.GetLogin(account, sha256.ComputeHash(bytePassword));
+				
+					if (user == null)
+					{
+						MessageBox.Show("帳號或密碼錯誤", "登入失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+						txtPassword.Text = string.Empty;
+						return;
+					}
 
-				// 登入成功，切換畫面
-				LoginSession.SetLoginUser(user);
+					// 登入成功，切換畫面
+					LoginSession.SetLoginUser(user);
+				}
 				Hide();
 				new MainForm().Show();
 			}

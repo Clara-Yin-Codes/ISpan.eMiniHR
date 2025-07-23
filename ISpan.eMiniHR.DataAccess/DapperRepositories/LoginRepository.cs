@@ -14,7 +14,7 @@ namespace ISpan.eMiniHR.DataAccess.DapperRepositories
         /// <param name="account">帳號</param>
         /// <param name="password">密碼</param>
         /// <returns></returns>
-        public static LoginUserInfoDto? GetLogin(string account, string password, bool testFlag = false)
+        public static LoginUserInfoDto? GetLogin(string account, byte[] password, bool testFlag = false)
         {
             try
             {
@@ -22,7 +22,7 @@ namespace ISpan.eMiniHR.DataAccess.DapperRepositories
 
                 // 呼叫預存程序 sp_LoginUser
                 var user = conn.QueryFirstOrDefault<LoginUserInfoDto>(
-                    "sp_LoginUser",
+                    "sp_LoginUser2",
                     new { Account = account, Password = password, TestFlag = testFlag },
                     commandType: CommandType.StoredProcedure
                 );
@@ -31,7 +31,7 @@ namespace ISpan.eMiniHR.DataAccess.DapperRepositories
                     throw new Exception("查無資料");
 
                 // 一次性查權限並設定
-                if (!user.IsAdmin) user.Permissions = ProgramPermission(user.EmpId).ToList();
+                if (!user.IsAdmin) user.Permissions = ProgramPermissionsRepository.GetProgramPermissions(user.Account, true).ToList();
 
                 return user;
             }
@@ -64,31 +64,6 @@ namespace ISpan.eMiniHR.DataAccess.DapperRepositories
                     throw new Exception("查無資料");
 
                 return user;
-            }
-            catch (SqlException sqlEx)
-            {
-                throw new ApplicationException(sqlEx.Message);
-            }
-        }
-
-        public static IEnumerable<ProgramPermissionDto> ProgramPermission(string EmpId)
-        {
-            try
-            {
-                using var conn = new SqlConnection(SqlDB.ConnectionString);
-
-                var list = conn.Query<ProgramPermissionDto>(
-                    @"SELECT ProgSysId, Queryable,
-                        Addable, Editable, Deletable,
-                        Voidable, Printable, Downloadable, Testable
-                        FROM ProgramPermissions
-                        WHERE EmpId = @EmpId", new { EmpId }
-                ).ToList();
-
-                if (list == null)
-                    throw new Exception("查無資料");
-
-                return list;
             }
             catch (SqlException sqlEx)
             {

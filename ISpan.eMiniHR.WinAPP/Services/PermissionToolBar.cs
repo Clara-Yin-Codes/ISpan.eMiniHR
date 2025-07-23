@@ -39,20 +39,20 @@ namespace ISpan.eMiniHR.WinApp.Components
             // if (perm == null) Controls.OfType<Button>();
             if (perm == null) return Enumerable.Empty<Button>();
 
-            bool canEdit = perm.Addable || perm.Editable;
+            bool canEdit = perm.Addable==true || perm.Editable == true;
 
             var items = new (bool condition, string text)[]
             {
-                (perm.Queryable, "查詢"),
-                (perm.Addable, "新增"),
-                (perm.Editable, "編輯"),
+                (perm.Queryable==true, "查詢"),
+                (perm.Addable==true, "新增"),
+                (perm.Editable==true, "編輯"),
                 (canEdit, "儲存"),
                 (canEdit, "取消"),
-                (perm.Deletable, "刪除"),
-                (perm.Voidable, "作廢"),
-                (perm.Downloadable, "匯出"),
-                (perm.Printable, "列印"),
-                (perm.Testable, "測試"),
+                (perm.Deletable==true, "刪除"),
+                (perm.Voidable==true, "作廢"),
+                (perm.Downloadable==true, "匯出"),
+                (perm.Printable==true, "列印"),
+                (perm.Testable==true, "測試"),
             };
 
             foreach (var (condition, text) in items)
@@ -71,7 +71,7 @@ namespace ISpan.eMiniHR.WinApp.Components
         /// </summary>
         /// <param name="progSysId"></param>
         /// <returns></returns>
-        private ProgramPermissionDto GetAdminFullPermission(string progSysId) => new ProgramPermissionDto
+        private ProgramPermissionsDto GetAdminFullPermission(string progSysId) => new ProgramPermissionsDto
             {
                 ProgSysId = progSysId,
                 Queryable = true,

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LXAKq0v9zaI=",
+  "dgSpecHash": "VoX1t9DwFOw=",
   "success": true,
-  "projectFilePath": "D:\\20250429_資展國際\\ISpan.eMiniHR\\ISpan.eMiniHR.WinAPP\\ISpan.eMiniHR.WinApp.csproj",
+  "projectFilePath": "D:\\20250429_資展國際\\FristProject\\ISpan.eMiniHR\\ISpan.eMiniHR.WinAPP\\ISpan.eMiniHR.WinApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\qwop1\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\qwop1\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
